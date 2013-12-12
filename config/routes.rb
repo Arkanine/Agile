@@ -1,5 +1,11 @@
 Depot::Application.routes.draw do
+
+  get "store/index"
+  get "store/inex"
+
   resources :products
+
+  root 'store#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
