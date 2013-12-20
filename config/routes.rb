@@ -1,7 +1,8 @@
 Depot::Application.routes.draw do
 
-  get "store/index"
-  get "store/inex"
+  resources :line_items
+
+  resources :carts
 
   resources :products
 
