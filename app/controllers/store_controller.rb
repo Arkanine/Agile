@@ -2,7 +2,7 @@ class StoreController < ApplicationController
   def index
     @time =  Time.now
     @count = index_visit_count
-    @products = Product.order(:title)
+    @products = Product.order(:title).page(params[:page]).per(2)
     @cart = current_cart
   end
 

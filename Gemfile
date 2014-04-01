@@ -56,3 +56,5 @@ end
 gem 'bootstrap-sass'
 
 gem 'kaminari'
+
+gem 'device'
