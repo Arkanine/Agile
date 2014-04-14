@@ -57,4 +57,4 @@ gem 'bootstrap-sass'
 
 gem 'kaminari'
 
-gem 'device'
+gem 'devise'
