@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.1'
+gem 'rails', '4.0.2'
+gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 
 # Use sqlite3 as the database for Active Record
 
@@ -16,7 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
 end
 
 group :production do
@@ -58,3 +59,4 @@ gem 'bootstrap-sass'
 gem 'kaminari'
 
 gem 'devise'
+

@@ -1,4 +1,11 @@
 Depot::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  resources :products do
+    get :who_bought, on: :member
+  end
+
+  resources :orders
 
   devise_for :users
   resources :line_items
